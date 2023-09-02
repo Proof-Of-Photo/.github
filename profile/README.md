@@ -57,3 +57,7 @@ Proof of Photo is a marketplace where publications can ask for images, people ca
 **What it is:** Celo is a blockchain protocol with low-fees and a thriving community of public goods projects. All transactions on Celo are carbon neutral, so it’s a good option for publications and photographers who care about preservation of the environment. 
 
 **How we use it:** We use Request Network on Celo and we created an implementation of TalentLayer on Celo.
+
+### Contract Addresses
+
+Yash will add these later! :D
