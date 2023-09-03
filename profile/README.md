@@ -40,11 +40,18 @@ Proof of Photo is a marketplace where publications can ask for images, people ca
 
 **How we use it:** We use Request Network’s escrow system for payments and we generate events that emit Request Network invoices.
 
+- https://github.com/Proof-Of-Photo/Dapp/blob/main/src/utils/requestNetwork.ts
+- https://github.com/Proof-Of-Photo/smart-contracts/blob/main/contracts/TalentLayerEscrow.sol
+- https://github.com/Proof-Of-Photo/smart-contracts/blob/main/contracts/TalentLayerEscrowV2.sol
+
 **⭐ TalentLayer for hiring workflows**
 
 **What it is:** TalentLayer is a hiring platform ecosystem with a developer toolkit to build on-chain work marketplaces. TalentLayer has components for job posts, escrow, user reputation, and more. 
 
 **How we use it:** We forked TalentLayer’s smart contracts and removed the existing escrow contract. Then, we edited the remaining contracts to interact with the Request Network escrow contract. This resulted in a system where we now have TalentLayer-based on-chain job posts and proposes, Request-based escrow, and TalentLayer-based user identity. We also used the TalentLayer StarterKit boilerplate as a starting point for our frontend. 
+
+- https://github.com/Proof-Of-Photo/smart-contracts/tree/main/contracts
+- https://github.com/Proof-Of-Photo/subgraph
 
 **⭐ Mantle** 
 
@@ -52,11 +59,21 @@ Proof of Photo is a marketplace where publications can ask for images, people ca
 
 **How we use it:** We use Request Network on Mantle and we created an implementation of TalentLayer on Mantle. 
 
+- https://github.com/Proof-Of-Photo/smart-contracts/blob/main/Makefile
+- https://github.com/Proof-Of-Photo/smart-contracts/blob/main/hardhat.config.ts
+- https://github.com/Proof-Of-Photo/smart-contracts/blob/main/networkConfig.ts
+
 **⭐ Celo**
 
 **What it is:** Celo is a blockchain protocol with low-fees and a thriving community of public goods projects. All transactions on Celo are carbon neutral, so it’s a good option for publications and photographers who care about preservation of the environment. 
 
 **How we use it:** We use Request Network on Celo and we created an implementation of TalentLayer on Celo.
+
+- https://github.com/Proof-Of-Photo/smart-contracts/blob/main/Makefile
+- https://github.com/Proof-Of-Photo/smart-contracts/blob/main/hardhat.config.ts
+- https://github.com/Proof-Of-Photo/smart-contracts/blob/main/networkConfig.ts
+- https://github.com/Proof-Of-Photo/subgraph/blob/main/Makefile
+- https://github.com/Proof-Of-Photo/subgraph/blob/main/networks.json
 
 ### Contract Addresses
 
@@ -79,14 +96,3 @@ Proof of Photo is a marketplace where publications can ask for images, people ca
 | TalentLayer Review      | 0x4d0A0Ce220f6286ecf4Ad2D3D2001A86618AAbA5 |
 | TalentLayer Arbitrator  | 0xF40adFF243a207f7F96D2448309919B2B878cBc2 |
 | TalentLayer Escrow      | 0xCe48dbBD5210B7CA02051f8dBc31a14cE0Ae2e86 |
-<!---
-**Mumbai Testnet**
-| Contract Name           | Addresss                                   |
-| ----------------------- | ------------------------------------------ |
-| TalentLayer Platform Id | 0x2Ff30AF2e8c2dF61D84E02099e0601a1d9Bc1DfE |
-| TalentLayer Id          | 0xf5EB280683F380d9dc8a87e45EaBedD2E6a17d10 |
-| TalentLayer Service     | 0x5BD37d36A762aa0acE3726c91B10301935d956a7 |
-| TalentLayer Review      | 0xD2b9f55Eefd4463125c83C69300C6ffdD8A773Bc |
-| TalentLayer Arbitrator  | 0x7222bAfCB64F9d415192fFd6dCc673174b12B9CE |
-| TalentLayer Escrow      | 0x9e8cB322645982B8111b685f2342e17925bC1515 |
--->
